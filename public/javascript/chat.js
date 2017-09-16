@@ -1,18 +1,22 @@
 var app = angular.module('chatApp', ['ngMaterial']);
-app.controller('chatController', function($scope)
-	$scope.messages = [];
+app.controller('chatController', function($scope){
+	$scope.messages = [
 	{
-		text : "Hi1"
+		sender: "BOT",
+		text : "Hiii",
+		time : "1.12"
 	},
 	{
-		text : "Hi2"
+		sender: "USER",
+		text : "what is this",
+		time: "1.13"
 	},
 	{
-		text : "Hi3"
-	},
-	{
-		text : "Hi4"
+		sender: "BOT",
+		text : "an image",
+		time : "2.20"
 	}
+	];
 var  exampleSocket =  new  WebSocket("ws://localhost:9000/chatSocket");
 exampleSocket.onmessage  =   function  (event) {
         var jsonData = JSON.parse(event.data);
