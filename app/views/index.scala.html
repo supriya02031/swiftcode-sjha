@@ -10,7 +10,7 @@
 
    <md-card flex="none" layout="column">
        <md-content flex="90" id="message-pane" style="width: 800px;
-       background: url(https://thumbs.dreamstime.com/z/abstract-colorful-creative-background-circles-design-43871570.jpg);
+       background: url(http://www.planwallpaper.com/static/images/518086-background-hd.jpg);
        background-repeat:no-repeat;
        background-size:cover;
        background-position:centre">
@@ -19,8 +19,8 @@
         <md-card style="max-width: 75%;
         border-radius: 10px; padding: 10px; font-size: 14px;"
          ng-style="message.sender=='BOT'?
-         {'background-color': 'grey'}:{'background-color': 'maroon'}">
-        <span style="color:black">{{message.text}}</span>
+         {'background-color': 'maroon'}:{'background-color': 'green'}">
+        <span style="color:blue">{{message.text}}</span>
        
         <span ng-bind-html="trust(message.feedResponse.description)">{{message.feedResponse.description}}
         </span>
