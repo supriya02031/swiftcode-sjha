@@ -14,6 +14,11 @@
        background-repeat:no-repeat;
        background-size:cover;
        background-position:right bottom">
+       <div ng-repeat="message in messages" layout = "column">
+        <md-card style="max-width: 75%"
+        <span>{{message.text}}</span>
+      </md-card>
+      </div>
 
        </md-content>
        <md-card flex="10" style="margin: 0px" layout="row" layout-align="space-between center" class="md-whiteframe-8dp">

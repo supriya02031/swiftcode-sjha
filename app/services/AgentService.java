@@ -12,7 +12,7 @@ import java.util.concurrent.CompletionStage;
 
 public class AgentService
 {
-    public AgentResponse getAgentResponse(String text)
+    public AgentResponse getAgentResponse(String text, UUID uuid)
     {
         AgentResponse agentResponse = new AgentResponse();
         try {
