@@ -13,13 +13,13 @@
        background: url(https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/07/giphy-14.gif);
        background-repeat:no-repeat;
        background-size:cover;
-       background-position:right bottom">
+       background-position:centre">
        <div ng-repeat="message in messages" layout = "column"
        layout-align="{{message.sender=='BOT' ? 'start start' : 'start end'}}">
         <md-card style="max-width: 75%;
         border-radius: 10px; padding: 10px; font-size: 14px;"
          ng-style="message.sender=='BOT'?
-         {'background-color': 'maroon'}:{'background-color': 'green'}">
+         {'background-color': 'grey'}:{'background-color': 'maroon'}">
         <span style="color:black">{{message.text}}</span>
        
         <span ng-bind-html="trust(message.feedResponse.description)">{{message.feedResponse.description}}
